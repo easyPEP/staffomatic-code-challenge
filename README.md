@@ -83,6 +83,10 @@ Once your changes are complete:
 
 After creating the PR, invite me (`[your GitHub username]`) as a collaborator on your repository. You can do this by going to your repository's **Settings** → **Manage Access** → **Invite Collaborator**.
 
+please invite the following:
+
+- https://github.com/fluxsaas
+
 Please leave a note on the PR inviting me to review the work.
 
 ---
