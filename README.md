@@ -35,19 +35,36 @@ You will **not** clone or fork this repository directly. Instead, you should cre
    ```bash
    git clone https://github.com/fluxsaas/staffomatic-code-challenge.git staffomatic-code-challenge
    cd staffomatic-code-challenge
-   bundle install
-   echo "ebeb5c739426e455d429f3d011384b77" > config/master.key
    ```
 
-6. Run Specs or server:
+### 2. get the app running
 
-to run the server:
+install gems with:
+
+```bash
+   bundle install
+```
+
+add the "super secret" master key to the config folder:
+
+```bash
+   echo "ebeb5c739426e455d429f3d011384b77" > config/master.key
+```
+
+to run the server you can use:
 
 ```bash
 bin/setup
 ```
 
 to run the specs with guard:
+
+```bash
+bin/rails db:test:prepare
+bundle exec rspec
+```
+
+or use guard to run tests automatically:
 
 ```bash
 guard
